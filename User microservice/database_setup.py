@@ -11,16 +11,6 @@ db_password = config['DATABASE']['Password']
 db_host = config['DATABASE']['Host']
 db_name = config['DATABASE']['Name']
 
-db_username = config['DATABASE']['Username']
-db_password = config['DATABASE']['Password']
-db_host = config['DATABASE']['Host']
-db_name = config['DATABASE']['Name']
-
-print(db_username)
-print(db_password)
-print(db_host)
-print(db_name)
-
 # create the engine
 engine = None
 try:
