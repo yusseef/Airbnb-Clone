@@ -1,0 +1,3 @@
+venv/
+User microservice/config.ini
+User microservice/__pycache__
