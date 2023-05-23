@@ -4,6 +4,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    volumes:
+      - .:/app
     container_name: Hotel_service
     ports:
       - "8000:8000"
