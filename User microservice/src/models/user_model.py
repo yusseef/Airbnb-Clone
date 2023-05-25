@@ -1,5 +1,6 @@
-from database_setup import Base
-from validators import Email, Password
+from db.database_setup import Base
+from validators.email_validator import Email
+from validators.password_validator import Password
 from sqlalchemy.sql import func
 from sqlalchemy import Column, Integer, Boolean, Text, String, DateTime, Date, Sequence, Enum, text
 from sqlalchemy_utils import ChoiceType
@@ -7,7 +8,7 @@ from sqlalchemy_utils import ChoiceType
 class User(Base):
     __tablename__ = 'user'
 
-    USER_TYPES = [
+    USER_TYPES = [ 
         ('ADMIN', 'admin'),
         ('OWNER', 'owner'),
         ('CUSTOMER', 'customer'),
