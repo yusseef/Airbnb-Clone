@@ -127,4 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# alembic file
 *.mako
+
+# config file
+.config.ini
