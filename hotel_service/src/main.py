@@ -1,8 +1,6 @@
 from fastapi import FastAPI
-from .db.database import engine
-from .db.database import Base
+from .db.database import Base # noqa
 
-Base.metadata.create_all(bind=engine)
 app = FastAPI()
 
 
