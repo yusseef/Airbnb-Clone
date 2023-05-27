@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from .db.database import Base # noqa
 
 app = FastAPI()
 
